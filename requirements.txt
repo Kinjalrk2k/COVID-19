@@ -7,5 +7,4 @@ ipywidgets
 datetime
 calmap
 plotly
-voila-material
 ipyvuetify

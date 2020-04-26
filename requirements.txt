@@ -5,3 +5,4 @@ plotly==4.6.0
 wget==3.2
 pandas==0.25.1
 calmap==0.0.7
+voila

@@ -1,29 +1,19 @@
 import os
+import wget
+
 if not os.path.exists('data'):
     os.makedirs('data')
 
-import urllib.request, json
+url_meta = {
+    'confirmed': 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv',
+    'deaths': 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv',
+    'recovered': 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv'
+}
 
-api_index_url = 'https://covid19.mathdro.id/api/' # base api url
-with urllib.request.urlopen(api_index_url) as url:
-    api_index = json.loads(url.read().decode())
-    print(api_index)
-
-# grabbing data for confirmned, recovered and deadths in local .json files
-for i in ['confirmed', 'recovered', 'deaths']:
-    with urllib.request.urlopen(api_index[i]['detail']) as url:
-        data = json.loads(url.read().decode())
-        print(data)
-        with open(os.path.join('data', i+'.json'), 'w') as outf:
-            json.dump(data, outf)
-
-# grabbing country data for lookup
-with urllib.request.urlopen('https://covid19.mathdro.id/api/countries') as url:
-        data = json.loads(url.read().decode())
-        print(data)
-        with open(os.path.join('data','countries.json'), 'w') as outf:
-            json.dump(data, outf)
-
-# last updated timestamp
-print('Last updated:', api_index['lastUpdate'])
-
+for key, value in url_meta.items():
+    desti_path = os.path.join('data', value.split('/')[-1])
+    if os.path.exists(desti_path):
+        print(f'\n{key} data already exists at: {desti_path}. Re-downloading', end='')
+        os.remove(desti_path)
+    print(f'\nDownloading {key} data')
+    wget.download(value, desti_path)

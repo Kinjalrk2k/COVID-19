@@ -19,7 +19,11 @@ Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE
 * Clone this repository
 * Browse the cloned location
 * Install dependencies: ````pip install -r requirements.txt````
-* Run the python script.
+* Run the [````grab_data.py````](grab_data.py) script to download [data](data).
+* Use [````i_notebook.ipynb````](i_notebook.ipynb) or [````i_notebook_resposive.ipynb````](i_notebook_resposive.ipynb)
+* For deploying locally:
+  - Non-Responsive: ````voila i_notebook.ipynb````
+  - Responsive: ````voila --template vuetify-default i_notebook_resposive.ipynb````
 
 ### Screenshot
 ![ss](https://user-images.githubusercontent.com/34955854/80311255-422d6100-87fc-11ea-814a-43051476320b.png)

@@ -11,6 +11,10 @@ Just an attempt to visualize COVID-19 data with the following learning objective
 - Cumulative data plots for confirmed, dead and recovered cases
 - Daily data plots for confirmed, dead and recovered cases
 
+### Data
+Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE
+- https://github.com/CSSEGISandData/COVID-19
+
 ### Usage (at your local machine)
 * Clone this repository
 * Browse the cloned location

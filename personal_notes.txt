@@ -1,0 +1,5 @@
+For responsive:
+web: voila --port=$PORT --template vuetify-default --no-browser i_notebook_resposive.ipynb
+
+For un-responsive, normal python:
+web: voila --port=$PORT --no-browser i_notebook.ipynb

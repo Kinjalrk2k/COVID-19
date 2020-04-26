@@ -10,6 +10,7 @@ Just an attempt to visualize COVID-19 data with the following learning objective
 ### Current features
 - Cumulative data plots for confirmed, dead and recovered cases
 - Daily data plots for confirmed, dead and recovered cases
+- Latest data vizualized on Maps
 
 ### Data
 Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE
@@ -26,7 +27,7 @@ Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE
   - Responsive: ````voila --template vuetify-default i_notebook_resposive.ipynb````
 
 ### Screenshot
-![ss](https://user-images.githubusercontent.com/34955854/80311255-422d6100-87fc-11ea-814a-43051476320b.png)
+![ss](readme-data/ss.png)
 
 ### Notes
 This project was created and tested under Windows, and is expected to work fully in other systems too.

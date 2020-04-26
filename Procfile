@@ -1,1 +1,1 @@
-web: voila --port=$PORT --template vuetify-default --no-browser i_notebook_resposive.ipynb
+web: voila --port=$PORT --no-browser i_notebook.ipynb

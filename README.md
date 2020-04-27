@@ -1,6 +1,6 @@
 # COVID-19
 A Personal COVID-19 Dashboard. Deployed here:
-https://covid19-dashborad.herokuapp.com/
+https://covid-19-dashboard-responsive.herokuapp.com/
 
 Just an attempt to visualize COVID-19 data with the following learning objectives:
 - Explore ````covid-19```` data

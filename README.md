@@ -23,11 +23,12 @@ Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE
 * Run the [````grab_data.py````](grab_data.py) script to download [data](data).
 * Use [````i_notebook.ipynb````](i_notebook.ipynb) or [````i_notebook_resposive.ipynb````](i_notebook_resposive.ipynb)
 * For deploying locally:
-  - Non-Responsive: ````voila i_notebook.ipynb````
   - Responsive: ````voila --template vuetify-default i_notebook_resposive.ipynb````
 
 ### Screenshot
-![ss](readme-data/ss.png)
+![ss1](readme-data/ss1.png)
+![ss2](readme-data/ss2.png)
+![ss3](readme-data/ss3.png)
 
 ### Notes
 This project was created and tested under Windows, and is expected to work fully in other systems too.

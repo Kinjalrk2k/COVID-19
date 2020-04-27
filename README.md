@@ -24,7 +24,6 @@ Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE
 * Use [````i_notebook.ipynb````](i_notebook.ipynb) or [````i_notebook_resposive.ipynb````](i_notebook_resposive.ipynb)
 * For deploying locally:
   - Non-Responsive: ````voila i_notebook.ipynb````
-  - Responsive: ````voila --template vuetify-default i_notebook_resposive.ipynb````
 
 ### Screenshot
 ![ss](readme-data/ss.png)

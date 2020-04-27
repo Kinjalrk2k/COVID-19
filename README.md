@@ -21,7 +21,7 @@ Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE
 * Browse the cloned location
 * Install dependencies: ````pip install -r requirements.txt````
 * Run the [````grab_data.py````](grab_data.py) script to download [data](data).
-* Use [````i_notebook.ipynb````](i_notebook.ipynb) or [````i_notebook_resposive.ipynb````](i_notebook_resposive.ipynb)
+* Use [````i_notebook.ipynb````](i_notebook.ipynb)
 * For deploying locally:
   - Non-Responsive: ````voila i_notebook.ipynb````
 

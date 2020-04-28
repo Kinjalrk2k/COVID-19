@@ -1,4 +1,6 @@
 # COVID-19
+![Grab Data](https://github.com/Kinjalrk2k/COVID-19/workflows/Grab%20Data/badge.svg?branch=master)
+
 A Personal COVID-19 Dashboard. Deployed here:
 https://covid19-dashborad.herokuapp.com/
 

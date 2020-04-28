@@ -3,15 +3,15 @@
 
 name: Python application
 
-# on:
-#   push:
-#     branches: [ master ]
-#   pull_request:
-#     branches: [ master ]
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
-on:  
-  schedule:    
-    - cron: 0 12 * * *
+# on:  
+#   schedule:    
+#     - cron: 0 12 * * *
       
 jobs:
   grabData:
@@ -51,12 +51,8 @@ jobs:
             git add .
             git checkout master
             git commit -a -m "Data update on `date +'%Y-%m-%d %H:%M:%S'`"
-            git checkout responsive
-            git cherry-pick master
-            git remote rm origin
             git remote add origin https://Kinjalrk2k:$PUSH_TOKEN@https://github.com/Kinjalrk2k/COVID-19.git
             git push origin HEAD:master
-            git push origin HEAD:responsive
           else
             echo 'unable to detect changes'
           fi

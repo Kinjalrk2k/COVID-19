@@ -50,8 +50,8 @@ jobs:
           git config --global user.email "kinjalrk2k@gmail.com"
           git config --global user.name "Kinjalrk2k"
           if [[ `git status --porcelain` ]]; then
+            git checkout origin/master
             git add .
-            git checkout master
             git commit -a -m "Data update on `date +'%Y-%m-%d %H:%M:%S'`"
             git remote add origin https://Kinjalrk2k:$PUSH_TOKEN@https://github.com/Kinjalrk2k/COVID-19.git
             git push origin HEAD:master

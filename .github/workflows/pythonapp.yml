@@ -41,7 +41,6 @@ jobs:
     - name: Grab the data
       run: |
         python grab_data.py
-        fi
         
     - name: git check in
       env:
@@ -58,4 +57,3 @@ jobs:
             git push origin HEAD:master
           else
             echo 'unable to detect changes'
-          fi

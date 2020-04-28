@@ -4,8 +4,8 @@
 name: Python application
 
 on:
-  repository_dispatch:
-    types: example-event
+  watch
+    types: [started]
 
 jobs:
   grabData:

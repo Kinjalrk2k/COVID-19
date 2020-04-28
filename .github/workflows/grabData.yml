@@ -3,7 +3,9 @@
 
 name: Python application
 
-on: repository_dispatch
+on:
+  repository_dispatch:
+    types: example-event
 
 jobs:
   grabData:

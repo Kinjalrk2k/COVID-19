@@ -3,13 +3,13 @@
 
 name: Grab Data
 
-# on:  
-#   schedule:    
-#     - cron: 0 1 * * *
+on:  
+  schedule:    
+    - cron: 0 1 * * *
 
-on:
-  watch:
-    types: [started]
+# on:
+#   watch:
+#     types: [started]
     
 jobs:
   grabData:

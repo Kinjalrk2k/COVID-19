@@ -25,16 +25,7 @@ jobs:
       env:
           GIT_OWNER_EMAIL: ${{ secrets.GIT_OWNER_EMAIL }} 
           PUSH_TOKEN: ${{secrets.PUSH_TOKEN}}
-#       run: |
-#         echo "hello"
       run: |
         git config --global user.email "kinjalrk2k@gmail.com"
         git config --global user.name "Kinjalrk2k"
-        if [[ `git status --porcelain` ]]; then
-          git checkout origin/master
-          git add .
-          git commit -a -m "Data update on `date +'%Y-%m-%d %H:%M:%S'`"
-          git remote add origin https://Kinjalrk2k:$PUSH_TOKEN@https://github.com/Kinjalrk2k/COVID-19.git
-          git push origin HEAD:master
-        else
-          echo 'unable to detect changes'
+        echo "email and username set"

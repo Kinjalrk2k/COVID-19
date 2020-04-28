@@ -3,9 +3,9 @@
 
 name: Python application
 
-on:
-  watch:
-    types: [started]
+on:  
+  schedule:    
+    - cron: 0 1 * * *
 
 jobs:
   grabData:

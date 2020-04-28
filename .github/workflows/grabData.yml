@@ -3,7 +3,7 @@
 
 name: Python application
 
-on: [push]
+on: repository_dispatch
 
 jobs:
   grabData:

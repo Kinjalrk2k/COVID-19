@@ -35,11 +35,14 @@ jobs:
         git config --global user.email "kinjalrk2k@gmail.com"
         git config --global user.name "Kinjalrk2k"
         echo "email and username set"
-        git checkout origin/master
-        git add .
-        git commit -a -m "Data update on `date +'%Y-%m-%d %H:%M:%S'`"
-        echo "commited"
-        git remote rm origin
-        git remote add origin https://Kinjalrk2k:$PUSH_TOKEN@github.com/Kinjalrk2k/COVID-19.git
-        git push origin HEAD:master
-        echo "pushed"
+        if [[ `git status --porcelain` ]]; then
+          git checkout origin/master
+          git add .
+          git commit -a -m "Data update on `date +'%Y-%m-%d %H:%M:%S'`"
+          echo "commited"
+          git remote rm origin
+          git remote add origin https://Kinjalrk2k:$PUSH_TOKEN@github.com/Kinjalrk2k/COVID-19.git
+          git push origin HEAD:master
+          echo "pushed"
+        else
+          echo 'unable to detect changes'

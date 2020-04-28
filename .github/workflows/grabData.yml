@@ -35,6 +35,5 @@ jobs:
         git add .
         git commit -a -m "Data update on `date +'%Y-%m-%d %H:%M:%S'`"
         echo "commited"
-        git remote add origin https://Kinjalrk2k:$PUSH_TOKEN@https://github.com/Kinjalrk2k/COVID-19.git
         git push origin HEAD:master
         echo "pushed"

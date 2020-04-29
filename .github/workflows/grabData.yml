@@ -32,6 +32,7 @@ jobs:
           GIT_OWNER_EMAIL: ${{secrets.GIT_OWNER_EMAIL}} 
           PUSH_TOKEN: ${{secrets.PUSH_TOKEN}}
       run: |
+        ls
         git config --global user.email "kinjalrk2k@gmail.com"
         git config --global user.name "Kinjalrk2k"
         echo "email and username set"

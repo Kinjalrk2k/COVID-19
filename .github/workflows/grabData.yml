@@ -5,7 +5,7 @@ name: Grab Data
 
 on:  
   schedule:    
-    - cron: 0 1 * * *
+    - cron: 37 5 * * *
 
 # on:
 #   watch:

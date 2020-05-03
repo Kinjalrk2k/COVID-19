@@ -1,4 +1,6 @@
 # COVID-19
+![Grab Data for Responsive](https://github.com/Kinjalrk2k/COVID-19/workflows/Grab%20Data%20for%20Responsive/badge.svg)
+
 A Personal COVID-19 Dashboard. Deployed here:
 https://covid-19-dashboard-responsive.herokuapp.com/
 

@@ -3,13 +3,13 @@
 
 name: Grab Data for Responsive
 
-# on:  
-#   schedule:    
-#     - cron: 37 5 * * *
+on:  
+  schedule:    
+    - cron: 00 1 * * *
 
-on:
-  watch:
-    types: [started]
+# on:
+#   watch:
+#     types: [started]
     
 jobs:
   grabData:

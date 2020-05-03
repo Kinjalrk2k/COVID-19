@@ -36,6 +36,7 @@ jobs:
         git config --global user.email "kinjalrk2k@gmail.com"
         git config --global user.name "Kinjalrk2k"
         echo "email and username set"
+        git fetch
         git checkout responsive
         git add .
         git commit -a -m "Data update on `date +'%Y-%m-%d %H:%M:%S'`"

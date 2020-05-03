@@ -1,0 +1,48 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Grab Data for Responsive
+
+on:  
+  schedule:    
+    - cron: 00 1 * * *
+
+# on:
+#   watch:
+#     types: [started]
+    
+jobs:
+  grabData:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install wget
+#     - name: Grab the data
+#       run: |
+#         python grab_data.py
+    - name: git check in
+      env:
+          GIT_OWNER_EMAIL: ${{secrets.GIT_OWNER_EMAIL}} 
+          PUSH_TOKEN: ${{secrets.PUSH_TOKEN}}
+      run: |
+        ls
+        git config --global user.email "kinjalrk2k@gmail.com"
+        git config --global user.name "Kinjalrk2k"
+        echo "email and username set"
+        git fetch
+        git checkout responsive
+        python grab_data.py
+        git add .
+        git commit -a -m "Data update on `date +'%Y-%m-%d %H:%M:%S'`"
+        echo "commited"
+        git remote rm origin
+        git remote add origin https://Kinjalrk2k:$PUSH_TOKEN@github.com/Kinjalrk2k/COVID-19.git
+        git push origin responsive
+        echo "pushed"

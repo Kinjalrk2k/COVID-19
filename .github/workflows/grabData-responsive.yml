@@ -5,14 +5,14 @@ name: Grab Data for Responsive
 
 on:  
   schedule:    
-    - cron: 00 1 * * *
+    - cron: 00 5 * * *
 
 # on:
 #   watch:
 #     types: [started]
     
 jobs:
-  grabData:
+  grabDataRes:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2

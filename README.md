@@ -40,8 +40,5 @@ More features and fixes are yet to come. Meanwhile suggestions, ideas, bug repor
 
 I am a python n00bie! I am still learning python! I have tried my best to give in as much effort required (of course directly proportionate to my knowledge), for this project.
 
-<details>
-  <summary>Author</summary>
-  
-  ***Kinjal Raykarmakar***
-</details
+<br>***Kinjal Raykarmakar***
+
